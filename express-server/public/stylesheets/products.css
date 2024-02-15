@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,600;6..72,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;400;500;600;700&display=swap');
+
+body {
+    width: 100%; display: flex; justify-content: center;
+}
+
+.container {
+    width: 2870px; height: 2087px; position: relative; background: white
+}
+
+.header {
+    width: 2770px; padding-top: 41px; padding-left: 96px; justify-content: flex-start; align-items: center; display: inline-flex;
+}
+
+.header .logo {
+    color: #2A9BBF; font-size: 32px; font-family: 'Newsreader'; font-weight: 500; line-height: 32px; word-wrap: break-word
+}
+
+.page-heading {
+    width: 2870px; height: 149px; position: relative;
+}
+
+.page-heading .page-heading-inner {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 50px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.page-heading-inner .search-info {
+    display: flex;
+    justify-content: center;
+}
+
+.search-info .product-text {
+    color: black; font-size: 64px; font-family: 'Newsreader'; font-weight: 400; line-height: 76.80px; word-wrap: break-word;
+    margin: 0;
+}
+
+.search-info .search-text-date {
+    color: black; font-size: 20px; font-family: 'Inter'; font-weight: 300; line-height: 26px; word-wrap: break-word;
+    margin: 0; margin-left: 30px; line-height: 5;
+}
+
+.page-heading-inner .sorting-button {
+    display: flex;
+    justify-content: center;
+    padding-left: 100px; padding-top: 50px;
+    margin-left: auto;
+}
+
+.sorting-button .sort-btn {
+    padding-top: 9.50px; padding-bottom: 9.50px; padding-left: 10px; padding-right: 11px; border-radius: 20px; overflow: hidden; border: 1px #C2C2C2 solid; justify-content: center; align-items: center; display: inline-flex;
+    text-align: center; color: black; font-size: 16px; font-family: 'Inter'; font-weight: 600; line-height: 20.80px; word-wrap: break-word;
+    margin-left: 10px;
+    
+}
+
+.sorting-button .ranking {
+    background: #5FD8FF;
+}
+
+.sorting-button .lower-cost {
+    background: white;
+}
+
+.sorting-button .higher-cost {
+    background: white;
+}
+
+/* -------------------------------------------------------------------------------------------- */
+
+.hr-heading {
+    width: 2678px; height: 0px; left: 96px; top: 149px; box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); border: 2px #E6E6E6 solid
+}
+
+/* ------------------------------------------------------------------------------------------------------ */
+
+.products {
+    padding-left: 100px; padding-right: 100px;
+    width: 2670px;
+}
+
+.products .product-row {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.product-row .product-container {
+    width: 870px; height: 450px; margin-right: 30px;
+    display: flex; background: #FAFAF5; border-radius: 24px; overflow: hidden; border: 1px #E6E6E6 solid; justify-content: flex-start; display: inline-flex
+}
+
+.product-container .product-info {
+    width: 240px; height: 363px; position: relative; background: #FAFAF5; border-right: 1px #E6E6E6 solid; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: flex;
+    margin: 0; padding: 0;
+}
+
+.product-info .product-img {
+    width: 240px; height: 240px;
+    margin: 0; padding: 0;
+}
+
+.product-info .product-name {
+    padding-left: 10px; padding-right: 10px;
+}
+
+.product-name .name {
+    color: black; font-size: 20px; font-family: 'Inter'; font-weight: 600; line-height: 26px; word-wrap: break-word;
+}
+
+.product-info .product-price {
+    margin: 0; padding: 0; padding-left: 10px; padding-right: 10px;
+}
+
+.product-price .base {
+    margin: 0; padding: 0;
+    display: flex;
+}
+
+.base .base-price {
+    width: 57px; height: 14px; color: black; font-size: 13px; font-family: 'Inter'; font-weight: 100; text-decoration: line-through; line-height: 30px; word-wrap: break-word;
+    margin: 0;
+}
+
+.base .discount {
+    width: 67px; height: 14px; color: black; font-size: 15px; font-family: 'Inter'; font-style: italic; font-weight: 700; line-height: 26px; word-wrap: break-word;
+    margin: 0;
+}
+
+.product-price .price {
+    color: #FF0000; font-size: 30px; font-family: 'Inter'; font-weight: 600; line-height: 26px; word-wrap: break-word;
+    margin: 0; margin-top: 15px;
+}
+
+.product-price .soldout {
+    color: blue; font-size: 30px; font-family: 'Inter'; font-weight: 600; line-height: 26px; word-wrap: break-word;
+    margin: 0; margin-top: 15px;
+}
+
+.product-container .product-review {
+    margin: 0; flex: 1 0 auto;
+}
+
+.product-review .non-review {
+    color: black; font-size: 30px; font-family: 'Inter'; font-style: italic; font-weight: 700; word-wrap: break-word;
+    margin: 0 0 0 10px;
+}
+
+.product-review .non-review:nth-of-type(1) {
+    margin-top: 20px;
+}
+
+.product-review .total-review {
+    padding: 10px 10px 0 10px; margin: 0;
+}
+
+.total-review p {
+    /* 글자 폰트 */
+    margin: 0;
+}
+
+.total-review .pos-neg-bar {
+    padding: 0; margin: 10px 0 0 0;
+    display: flex;
+    border: black 1px solid;
+    border-radius: 5px;
+}
+
+.pos-neg-bar .pos {
+    margin: 0; height: 30px;
+    background-color: blue;
+}
+
+.pos-neg-bar .neg {
+    margin: 0; height: 30px;
+    background-color: red;
+    flex: 1 0 auto;
+}
+
+.product-review .keyword {
+    padding:0 10px 0 10px; margin: 0;
+}
+
+.keyword .pos-keyword, .neg-keyword {
+    display: flex;
+    border: black 1px;
+    border-radius: 5px;
+}
+
+.pos-keyword p, .neg-keyword p {
+    /* 글자 폰트 */
+    width: 100px;
+    margin-bottom: 0;
+}
+
+.pos-keyword p {
+    margin-top: 0;
+}
+
+.pos-keyword p:first-child, .neg-keyword p:first-child {
+    /* 글자 폰트 */
+    font-size: 15px; font-family: 'Inter'; font-weight: 600; word-wrap: break-word;
+    width: 100px;
+}
+
+.product-review .product-star-point {
+    padding: 0 10px 0 10px; margin: 0;
+}
+
+.product-star-point p {
+    /* 글자 폰트 */
+    margin: 0;
+}
+
+.product-star-point .star-percentage {
+    padding: 10px 0 0 0; margin: 0;
+}
+
+.star-percentage .five-point, .four-point, .three-point, .two-point, .one-point {
+    padding: 0; margin-bottom: 10px; display: flex; justify-content: flex-start;
+}
+
+.five-point p, .four-point p, .three-point p, .two-point p, .one-point p {
+    margin: 5px 5px;
+}
+
+.point-bar {
+    display: flex;
+    height: 33px;
+    flex: 1 0 auto;
+    padding: 0; margin: 0;
+    border: black 2px solid; border-radius: 20px;
+    background: white;
+    overflow: hidden;
+}
+
+.point-bar .content {
+    margin: 0; background: rgb(255, 217, 0); height: 100%; display: flex; justify-content: flex-end;
+}
+
+.content .percent {
+    /* 글자 폰트 */
+    margin: 5px 5px;
+    vertical-align: middle;
+}
+/* ---------------------------------------------------------------------------------------------------- */
+
+.hr-product {
+
+}

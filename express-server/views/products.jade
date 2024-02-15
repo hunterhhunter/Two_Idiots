@@ -1,0 +1,117 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Product
+        link(rel="stylesheet", href="/stylesheets/products.css")
+    body 
+        .container 
+            .header 
+                a.logo Reviewers
+            .page-heading 
+                .page-heading-inner 
+                    .search-info 
+                        p.product-text Product
+                        p.search-text-date "상품" 검색 결과 - 검색일
+                    .sorting-button 
+                        button.ranking.sort-btn 쿠팡 랭킹순
+                        button.lower-cost.sort-btn 낮은 가격순
+                        button.higher-cost.sort-btn 높은 가격순
+                hr.hr-heading
+            .products 
+                - for(var i = 0; i < (products.length / 3); i++)
+                    .product-row 
+                        - for(var j = 0; (j < 3 && i*3+j < products.length); j++)
+                            .product-container 
+                                .product-info 
+                                    img.product-img(src=products[i*3+j]["product_image"], alt=products[i*3+j]["product_name"])
+                                    .product-name 
+                                        p.name #{products[i*3+j]["product_name"]}
+                                    .product-price
+                                        if products[i*3+j]["soldout_state"]
+                                            p.soldout 품절
+                                        else
+                                            if products[i*3+j]["used_product_price"]
+                                                p.price #{products[i*3+j]["used_product_price"]}&#40;중고&#41;
+                                            else
+                                                .base 
+                                                    p.base-price #{products[i*3+j]["product_base_price"]}
+                                                    p.discount #{products[i*3+j]["product_discount"]}
+                                                p.price #{products[i*3+j]["product_price"]}
+                                .product-review
+                                    if products[i*3+j]["review_info"] == false
+                                        p.non-review 제품에 리뷰가 없거나
+                                        br
+                                        p.non-review 리뷰 요약 정보가 없습니다.
+                                    else 
+                                        .total-review 
+                                            p 총 리뷰 수 #{products[i*3+j]["review_info"]["total_reviews"]}개&#40;긍정 #{products[i*3+j]["review_info"]["total_positive_reviews"]}개, 부정 #{products[i*3+j]["review_info"]["total_negative_reviews"]}개&#41;
+                                            .pos-neg-bar 
+                                                - var pos_bar = products[i*3+j]["review_info"]["total_positive_reviews"] / products[i*3+j]["review_info"]["total_reviews"] * 100
+                                                .pos(style="width:"+pos_bar+"%")
+                                                .neg
+                                        hr.hr-product
+                                        .keyword
+                                            .pos-keyword 
+                                                p 긍정 키워드 : 
+                                                for keyword in products[i*3+j]["review_info"]["top_5_pos_keywords"]
+                                                    p #{keyword[0]}&#40;#{keyword[1]}&#41;
+                                            .neg-keyword
+                                                p 부정 키워드 : 
+                                                for keyword in products[i*3+j]["review_info"]["top_5_neg_keywords"]
+                                                    p #{keyword[0]}&#40;#{keyword[1]}&#41;
+                                        hr.hr-product
+                                        .product-star-point
+                                            p 별점
+                                            .star-percentage 
+                                                .five-point
+                                                    p ⭐5&#40;#{products[i*3+j]["review_info"]["star_count"]["5"]}&#41;
+                                                    .point-bar
+                                                        - var five = (products[i*3+j]["review_info"]["star_count"]["5"]/products[i*3+j]["review_info"]["total_reviews"]*100).toFixed(0)
+                                                        if five > 50
+                                                            .content(style="width:"+five+"%")
+                                                                p.percent #{five}%
+                                                        else 
+                                                            .content(style="width:"+five+"%")
+                                                            p.percent #{five}%
+                                                .four-point 
+                                                    p ⭐4&#40;#{products[i*3+j]["review_info"]["star_count"]["4"]}&#41;
+                                                    .point-bar
+                                                        - var four = (products[i*3+j]["review_info"]["star_count"]["4"]/products[i*3+j]["review_info"]["total_reviews"]*100).toFixed(0)
+                                                        if four > 50
+                                                            .content(style="width:"+four+"%")
+                                                                p.percent #{four}%
+                                                        else
+                                                            .content(style="width:"+four+"%")
+                                                            p.percent #{four}%
+                                                .three-point 
+                                                    p ⭐3&#40;#{products[i*3+j]["review_info"]["star_count"]["3"]}&#41;
+                                                    .point-bar
+                                                        - var three = (products[i*3+j]["review_info"]["star_count"]["3"]/products[i*3+j]["review_info"]["total_reviews"]*100).toFixed(0)
+                                                        if three > 50
+                                                            .content(style="width:"+three+"%")
+                                                                p.percent #{three}%
+                                                        else 
+                                                            .content(style="width:"+three+"%")
+                                                            p.percent #{three}%
+                                                .two-point 
+                                                    p ⭐2&#40;#{products[i*3+j]["review_info"]["star_count"]["2"]}&#41;
+                                                    .point-bar
+                                                        - var two = (products[i*3+j]["review_info"]["star_count"]["2"]/products[i*3+j]["review_info"]["total_reviews"]*100).toFixed(0)
+                                                        if two > 50
+                                                            .content(style="width:"+two+"%")
+                                                                p.percent #{two}%
+                                                        else 
+                                                            .content(style="width:"+two+"%")
+                                                            p.percent #{two}%
+                                                .one-point 
+                                                    p ⭐1&#40;#{products[i*3+j]["review_info"]["star_count"]["1"]}&#41;
+                                                    .point-bar
+                                                        - var one = (products[i*3+j]["review_info"]["star_count"]["1"]/products[i*3+j]["review_info"]["total_reviews"]*100).toFixed(0)
+                                                        if one > 50
+                                                            .content(style="width:"+one+"%")
+                                                                p.percent #{one}%
+                                                        else 
+                                                            .content(style="width:"+one+"%")
+                                                            p.percent #{one}%
