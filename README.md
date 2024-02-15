@@ -15,8 +15,9 @@
 
 ### 실행 사진
 1. 유아복 검색시 화면
-![[assets/2.png]]
+![2](https://github.com/hunterhhunter/three_idiot/assets/73726689/70dabfe6-8178-41c1-9ca0-5da245ccd3b4)
+
 
 2. 유아복 클릭시 화면
-![[assets/1.png]]
-![[assets/3.png]]
+![1](https://github.com/hunterhhunter/three_idiot/assets/73726689/aa849fd8-5f5e-421d-8c83-9ce516a8e6c0)
+![3](https://github.com/hunterhhunter/three_idiot/assets/73726689/d5729636-2bdb-43d6-983a-8ffb6901c229)
