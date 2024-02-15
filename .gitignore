@@ -1,1 +1,6 @@
-
+*.pickle
+*.csv
+*.xlsx
+*.h5
+*.pickle
+*.pickle
