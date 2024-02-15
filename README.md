@@ -21,3 +21,9 @@
 2. 상세 분석 확대 화면
 ![1](https://github.com/hunterhhunter/three_idiot/assets/73726689/aa849fd8-5f5e-421d-8c83-9ce516a8e6c0)
 ![3](https://github.com/hunterhhunter/three_idiot/assets/73726689/d5729636-2bdb-43d6-983a-8ffb6901c229)
+
+### 이후 계획
+- jade 수정
+- 분석 데이터 추가
+- 분석 모델, 키워드 수정
+- gpt 연계
