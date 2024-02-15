@@ -1,0 +1,24 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title allItem
+        link(rel="stylesheet", type="text/css", href="/css/showItem.css")
+    body 
+        .container 
+            h3 #{item.name}
+            .item-info 
+                p#price #{item.price}
+                p#discount -#{item.discount}%
+                - var real = item.price * (100 - item.discount) / 100
+                p#realPrice #{real}
+                
+            h4#info #{item.info}
+        .bottom
+            a#link(href="") 쿠팡 사이트로 가기
+            form.basket-form(action="/api/basket", method="post")
+                input#itemId(type="hidden", name="itemId", value=item.id)
+                button(type="submit") 장바구니에 넣기
+            
+        

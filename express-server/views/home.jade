@@ -1,0 +1,76 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title reviewers
+        link(rel="stylesheet", href="/stylesheets/home.css")
+    body 
+        .container 
+            .header 
+                a.logo Reviewers
+            .title 
+                .title-inner
+                    p.title1 We're smart
+                    img.logo-coupang(src="/images/logo_coupang_w350.png", alt="쿠팡 로고")
+                    p.title2 spenders
+            .search-bar 
+                form.search-form(action="/search", method="POST")
+                    input.content(id="search_word", type="text", name="search_word")
+                    button.submit(type="submit") Browse product
+            .body-ad-banner(style='height:#{banner[0][height]};width:#{banner[0][width]}') 
+                .ad-banner-inner 
+                    img.ad-banner1(src=banner[0]['img'], alt="", onclick='location.href="' + banner[0]['href'] +'"')
+                    img.ad-banner2(src=banner[1]['img'], style="display:none")
+                    img.ad-banner3(src=banner[2]['img'], style="display:none")
+                    img.ad-banner4(src=banner[3]['img'], style="display:none")
+                    img.ad-banner5(src=banner[4]['img'], style="display:none")
+                    img.ad-banner6(src=banner[5]['img'], style="display:none")
+            .middle 
+                .middle-left 
+                    p.introduction Hello, Thank you for using our services. Our service is providiing reviews about Shopping Web site Coupang product. We’re nonprofit organization. and This Site is supported by Coupang Partners. The copyright of most of our services (images, information, etc.) is with Coupang.
+                .middle-right
+                    .cate1-4.flex 
+                        .cate1
+                            a 패션의류/잡화
+                        .cate2
+                            a 뷰티
+                        .cate3
+                            a 출산/유아동
+                        .cate4 
+                            a 식품
+                    .cate5-8.flex 
+                        .cate5
+                            a 주방용품
+                        .cate6 
+                            a 생활용품
+                        .cate7 
+                            a 홈인테리어
+                        .cate8 
+                            a 가전디지털
+                    .cate9-12.flex 
+                        .cate9 
+                            a 스포츠/레저
+                        .cate10
+                            a 자동차용품
+                        .cate11     
+                            a 도서/음반/DVD
+                        .cate12
+                            a 완구/취미
+                    .cate13-16.flex
+                        .cate13 
+                            a 문구/오피스
+                        .cate14
+                            a 반려동물용품
+                        .cate15
+                            a 헬스/건강식품
+                        .cate16 
+                            a 테마관
+            .bottom
+                .cs-inner 
+                    p.cs-number 고객센터 : 1688-0199
+                    p.cs-info 고객 센터는 평일 오후 2:00 ~ 6:00 동안 운영됩니다.
+                .cp-inner
+                    p.copyright CopyRights © Twoidiots Corp. &amp; Coupang Corp. With Coupang Partners
+    //- script(src="/javascript/") 
+//- 프로덕트 검색 결과창 - 요약 정보도 같이 표시해서 한줄에 두개로 밑으로 스크롤

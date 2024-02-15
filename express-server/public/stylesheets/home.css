@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,600;6..72,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;400;500;600;700&display=swap');
+
+body {
+    text-align: center;
+}
+
+.container {
+    width: 100%; height: 2092px; position: relative; background: white
+}
+
+.header {
+    width: 1440px; 
+    padding-top: 41px; padding-bottom: 39px; padding-left: 96px; padding-right: 1208px; 
+    left: 0px; top: 0px; position: relative; justify-content: flex-start; align-items: center; display: inline-flex
+}
+
+.logo {
+    color: #2A9BBF; 
+    font-size: 32px; font-family: 'Newsreader', serif; font-weight: 500; line-height: 32px; word-wrap: break-word
+}
+
+.title {
+    height: 150px; 
+    position: relative; text-align: center;
+}
+
+.title-inner {
+    display: flex; justify-content: center;
+}
+
+.title1 {
+    width: 380px; 
+    height: 77px; 
+    position: relative; text-align: center; margin: 0;
+    color: black; font-size: 64px; font-family: 'Newsreader'; font-weight: 400; line-height: 76.80px; word-wrap: break-word
+}
+
+.logo-coupang {
+    width: 350px; height: 82px; position: relative
+}
+
+.title2 {
+    width: 310px; height: 63px; position: relative; text-align: center; margin: 0;
+    color: black; font-size: 70px; font-family: 'Newsreader'; font-weight: 400; line-height: 84px; word-wrap: break-word
+}
+
+.search-bar {
+    width: 848px; height: 186px; position: relative; text-align: center; margin: 0 auto;
+}
+
+.search-bar .content {
+    width: 847px; height: 59px; background: white; box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); border-radius: 30px; border: 1px rgba(0, 0, 0, 0.20) solid;
+    margin-bottom: 20px;
+    color: #000; text-align: center;
+
+    font-feature-settings: 'clig' off, 'liga' off; font-family: 'Newsreader'; font-size: 30px; font-style: normal; font-weight: 400; line-height: 120%; /* 36px */letter-spacing: 0.6px;
+}
+
+.search-bar .submit {
+    width: 227px; height: 64px; padding-top: 19px; padding-bottom: 19px; padding-left: 36px; padding-right: 37px; background: #5FD8FF; border-radius: 8px; overflow: hidden; justify-content: center; align-items: center; display: inline-flex;
+    color: white; font-size: 20px; font-family: Inter; font-weight: 600; line-height: 26px; word-wrap: break-word
+}
+
+.body-ad-banner {
+    padding: 0%; margin: 0 auto;
+}
+
+.middle {
+    width: 1440px; height: 722px; padding-bottom: 2px; justify-content: center; align-items: flex-start;
+    display: inline-flex; margin: 0 auto;
+}
+
+.middle .middle-left {
+    flex: 1 1 0; align-self: stretch; padding-left: 58px; padding-right: 51px; justify-content: flex-end; align-items: center; display: inline-flex
+}
+
+.middle-left .introduction {
+    width: 611px; height: 492px; color: black; font-size: 32px; font-family: 'Newsreader'; font-weight: 600; line-height: 48px; word-wrap: break-word
+}
+
+.middle .middle-right {
+    width: 720px; height: 720px; position: relative; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: flex
+}
+
+.middle-right div div{
+    width: 178px; height: 178px; background: #D9D9D9; border: 1px black solid
+}
+
+.bottom {
+    width: 1440px; height: 120px; position: relative; background: #080069; margin: 0 auto;
+}
+
+.bottom .cs-inner {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.bottom .cs-inner .cs-number {
+    text-align: center; color: white; font-size: 18px; font-family: 'Inter'; font-weight: 400; line-height: 23.40px; word-wrap: break-word;
+}
+
+.bottom .cs-inner .cs-info {
+    text-align: center; color: white; font-size: 18px; font-family: 'Inter'; font-weight: 400; line-height: 23.40px; word-wrap: break-word;
+    padding-left: 100px;
+}
+
+.bottom .cp-inner {
+    text-align: center;
+}
+
+.bottom .cp-inner .copyright {
+    width: 589px; height: 58px; left: 426px; top: 40px; position: absolute; text-align: center; color: white; font-size: 16px; font-family: 'Inter'; font-weight: 400; line-height: 20.80px; word-wrap: break-word
+}
+
+/* ----------------------------------------------------------------------------------------- */
+
+.flex {
+    display: flex;
+}
