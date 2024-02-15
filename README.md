@@ -15,8 +15,8 @@
 
 ### 실행 사진
 1. 유아복 검색시 화면
-![[assets/2.png]]
+![assets/2.png]
 
 2. 유아복 클릭시 화면
-![[assets/1.png]]
-![[assets/3.png]]
+![assets/1.png]
+![assets/3.png]
