@@ -7,7 +7,7 @@
 
 ### 개발 내용
 #### 박인성 (Hexeong)
-1. Node.js, HTML, JavaScript를 사용한 웹사이트 설계 및 구현
+1. Node.js(Express JS), HTML, JavaScript를 사용한 웹사이트 설계 및 구현
 2. Python beautifulsoup를 사용한 쿠팡 상품정보 크롤링
 #### 조영진 (hunterhhunter)
 1. Python beautifulsoup를 사용한 쿠팡 리뷰 크롤링 프로그램 설계 및 구현
