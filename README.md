@@ -1,5 +1,5 @@
 
-# Two_Idiots
+# Coupang_Review_Analyzing_Website
 ## 쿠팡 리뷰 분석 웹사이트 제작 프로젝트
 
 ### 설명 (Discription)
